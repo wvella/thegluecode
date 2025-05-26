@@ -22,3 +22,11 @@ url = "https://x.com/wvella"
 
 [social.params]
 icon = "brand-x"
+
+[[social]]
+identifier = "LinkedIn"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/warrenvella/"
+
+[social.params]
+icon = "brand-linkedin"
