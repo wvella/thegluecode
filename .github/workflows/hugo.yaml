@@ -34,7 +34,7 @@ jobs:
     env:
       HUGO_VERSION: 0.147.2
       HUGO_ENVIRONMENT: production
-      TZ: America/Los_Angeles
+      TZ: Australia/Melbourne
     steps:
       - name: Install Hugo CLI
         run: |
@@ -47,7 +47,7 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Replace GA placeholder with real ID
+      - name: Replace GA placeholder with the real ID
         run: sed -i "s/GA_PLACEHOLDER/${{ secrets.GA_TRACKING_ID }}/" config/_default/config.toml
       - name: Setup Pages
         id: pages
