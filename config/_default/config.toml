@@ -3,6 +3,10 @@ baseurl = "https://thegludecode.dev"
 languageCode = "en-us"
 title = "The Glue Code"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
 defaultContentLanguage = "en"
