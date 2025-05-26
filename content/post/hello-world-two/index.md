@@ -1,13 +1,15 @@
 ---
-title: This is another post!
+title: Hello World 2
 description: Welcome to Hugo Theme Stack
-slug: another-post
-date: 2024-03-06 00:00:00+0000
+slug: hello-world-2
+date: 2022-03-06 00:00:00+0000
 image: cover.jpg
 categories:
-    - Example Category 2
+    - Category 1
+    - Category 2
 tags:
-    - Example Tag 2
+    - Tag 1
+    - Tag 2
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
