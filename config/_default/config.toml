@@ -20,3 +20,12 @@ disqusShortname = "hugo-theme-stack"
 
 [pagination]
 pagerSize = 5
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-EJKBNLQP2Q'
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = true
