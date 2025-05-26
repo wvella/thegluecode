@@ -63,6 +63,9 @@ jobs:
             hugo-
       - name: Configure Git
         run: git config core.quotepath false
+      - name: Replace GA placeholder with real ID
+        run: |
+          sed -i "s/GA_PLACEHOLDER/${{ secrets.GA_TRACKING_ID }}/" config.toml
       - name: Build with Hugo
         run: |
           hugo \

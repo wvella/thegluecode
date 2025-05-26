@@ -23,7 +23,7 @@ pagerSize = 5
 
 [services]
   [services.googleAnalytics]
-    id = 'G-EJKBNLQP2Q'
+    id = 'GA_PLACEHOLDER'
 
 [privacy]
   [privacy.googleAnalytics]
