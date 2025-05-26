@@ -47,6 +47,8 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Replace GA placeholder with real ID
+        run: sed -i "s/GA_PLACEHOLDER/${{ secrets.GA_TRACKING_ID }}/" config.toml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -63,9 +65,6 @@ jobs:
             hugo-
       - name: Configure Git
         run: git config core.quotepath false
-      - name: Replace GA placeholder with real ID
-        run: |
-          sed -i "s/GA_PLACEHOLDER/${{ secrets.GA_TRACKING_ID }}/" config.toml
       - name: Build with Hugo
         run: |
           hugo \
