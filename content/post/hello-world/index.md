@@ -1,22 +1,14 @@
 ---
 title: Hello World
-description: Welcome to Hugo Theme Stack
+description: Welcome to The Glue Code!
 slug: hello-world
-date: 2025-03-06 00:00:00+0000
-image: cover.jpg
-categories:
-    - Category 1
-    - Category 2
-tags:
-    - Tag 1
-    - Tag 2
+date: 2025-05-26 00:00:00+0000
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
-Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!
+Welcome to The Glue Code.
+I'm glad you're here with me. Together, we’re going to explore all things integration. We are going to dive into interesting topics, patterns, and concepts that shape how systems connect together.
 
-For more information about this theme, check the documentation: https://stack.jimmycai.com/
+I’d love to hear your comments and feedback, so please feel free to post a reply on any of the posts.
 
-Want a site like this? Check out [hugo-theme-stack-stater](https://github.com/CaiJimmy/hugo-theme-stack-starter)
-
-> Photo by [Pawel Czerwinski](https://unsplash.com/@pawel_czerwinski) on [Unsplash](https://unsplash.com/)
+Let's get sticky with Integration.!
