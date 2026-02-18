@@ -1,9 +1,8 @@
 ---
 title: Hello World
 description: Welcome to The Glue Code!
-slug: hello-world
 date: 2025-05-26 00:00:00+0000
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+categories: ["Integration"]
 ---
 
 Welcome to The Glue Code.
