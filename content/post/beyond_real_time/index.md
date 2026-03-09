@@ -61,11 +61,7 @@ An immutable data stream becomes a forensic instrument in your architecture. You
 ### Isn’t data streaming similar to other integration platforms?
 You might be tempted to compare data streaming to traditional Message Queues, ESB/iPaaS, or batch ETL platforms. However, those platforms are primarily designed to move data ephemerally from Point A to Point B.
 
-In data streaming, storage is embraced as central to the architecture. This persistent storage becomes the memory that holds the shared truth. Fundamentally, a data streaming platform is a storage platform which truly addresses the challenge of quadratic growth in bidirectional point-to-point integrations, represented by the formula:
-
-$$
-2N(N-1)
-$$
+In data streaming, storage is embraced as central to the architecture. This persistent storage becomes the memory that holds the shared truth. Fundamentally, a data streaming platform is a storage platform which truly addresses the challenge of quadratic growth in bidirectional point-to-point integrations. If we want to calculate the total number of system pairs we can use $n(n-1)/2$, or to calculate the total number of directional integrations we can use $n(n-1)$. 
 
 You might also be tempted to build this shared truth in a centralised database. While a  database might seem like an option, it's fundamentally misaligned for a data stream log and you will inevetibably end up re-building the streaming protocol (offsets, partitions, etc). Databases prioritize read performance, while data streams excel at handling massive write throughput - often measured in MBps or GBps. If you squint hard enough, you'll recognise that data streaming shares deep roots with write-ahead logging (WAL), a technique that databases themselves rely on for durability and consistency. See [Turning the database inside-out with Apache Samza](https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza)
 
