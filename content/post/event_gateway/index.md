@@ -1,6 +1,6 @@
 ---
 title: "Your Event Streams Deserve a Gateway Too"
-description: "You wouldn't expose an API without a gateway. What about Kafka?"
+description: "You wouldn't expose a REST API without a gateway. What about Kafka?"
 date: 2026-07-06T09:03:57+10:00
 image:
 math:
