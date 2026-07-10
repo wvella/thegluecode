@@ -2,6 +2,23 @@
     You can add your own custom styles here.
 */
 
+// The theme's container tops out at 1536px wide, so on wider monitors the
+// page stays that width forever while the sidebars keep eating a fixed
+// percentage of it — leaving the article column narrow and the rest of
+// the browser empty. Let the container keep growing on large screens and
+// switch the sidebars to fixed widths so extra space goes to the article.
+.container.extended {
+    @media (min-width: 1600px) {
+        max-width: 1800px;
+        --left-sidebar-max-width: 230px;
+        --right-sidebar-max-width: 300px;
+    }
+
+    @media (min-width: 1920px) {
+        max-width: 2100px;
+    }
+}
+
 .article-list article .article-category a {
     background: #077A7D !important;
     color: #fff !important;
@@ -15,8 +32,12 @@
     text-transform: lowercase !important;
 }
 
-.article-content img {
+// Matches the theme's own selector specificity (.article-page .main-article
+// .article-content img) so this actually overrides its max-width: 100%
+// instead of losing the cascade despite loading later.
+.article-page .main-article .article-content img {
     width: 80%;
+    max-width: 500px;
     margin: 0 auto;
     display: block;
 }
