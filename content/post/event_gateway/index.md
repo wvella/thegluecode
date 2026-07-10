@@ -40,11 +40,11 @@ For years, we've treated the synchronous port as the primary external integratio
 
 ## The birthday party
 
-My daughter recently turned one. If you've ever organised a first birthday party, you quickly realise it's somehow more stressful than organising a wedding. There are invitations, a venue, RSVPs, a cake, food, invoices, weather monitoring, and guest notifications to list a few. One of the very first things I had to do was invite all her friends. So I had two options:
+My daughter recently turned one. If you've ever organised a first birthday party, you quickly realise it's somehow more stressful than organising a wedding. There are invitations, a venue, RSVPs, a cake, food, invoices, weather monitoring, and guest notifications to name a few. One of the very first things I had to do was invite all her friends. So I had two options:
 
 - **Option 1 — synchronous:** We can call every friend individually. I pick up the phone, wait for them to answer, invite them, and receive their RSVP. You get an immediate, confirmed answer. But everyone has to be available at the exact moment you're calling, and if your daughter has as many friends as mine does, you'll be on the phone for days.
 
-- **Option 2 — asynchronous:** We can post a message in a group chat. We announce the date and venue once, and let people respond in their own time. Some people may RSVPs within minutes. Someone else may come back three days later. The information is there when they're ready for it.
+- **Option 2 — asynchronous:** We can post a message in a group chat. We announce the date and venue once, and let people respond in their own time. Some people may RSVP within minutes. Someone else may come back three days later. The information is there when they're ready for it.
 
 So which option do you choose? It depends — and that's exactly the point. The right approach is always dependent on the context. The problem is that most systems have defaulted to synchronous even when asynchronous may be a better fit.
 
@@ -78,7 +78,7 @@ These aren't things you want to pull with an MCP tool call on a schedule. They'r
 
 Here's the reality: just as everyone wants access to your REST APIs, everyone also wants access to your events. And the demand for your events will grow significantly as AI agents start listening to events. AI agents will need to consume your events. Frontend applications need to reflect live state. Analytics teams want event feeds piped directly into their platforms. The problem is that exposing Kafka to the outside world is not straightforward.
 
-There are four fundamental considerations you hit almost immediately.
+There are four issues to consider. The first matters when Kafka is exposed externally. The other three apply whenever Kafka is exposed, whether internally, externally, or both.
 
 **1. External consumers should never see your internals.**
 
@@ -106,7 +106,7 @@ It's worth noting, if a consumer _can_ speak Kafka, it _should_. The semantics c
 
 ---
 
-## Why it matters
+## Why event gateways matter
 
 Events are already the connective tissue that choreographs your internal systems. They're increasingly going to be what triggers your AI agents too.
 
